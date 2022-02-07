@@ -18,10 +18,10 @@ namespace RockPaperScissor.Tests
 
         //Act
         string result = "draw";
-        //string methodReturnValue = RockPaperScissorGame.DecideWhoWins();
+        RockPaperScissorGame newGame = new RockPaperScissorGame();
 
         //Assert
-        Assert.AreEqual("true", result);
+        Assert.AreEqual(newGame.DecideWhoWins(user1, user2), result);
       }
     }
 }

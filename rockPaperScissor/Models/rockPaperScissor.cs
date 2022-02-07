@@ -1,14 +1,13 @@
 using System;
+using System.Collections.Generic;
 
 namespace RockPaperScissor.Logic {
 
   public class RockPaperScissorGame
   {
-
-    public void DecideWhoWins()
+    public string DecideWhoWins(string user1, string user2)
     {
-      //Code will go here
+         return "hi";
     }
-   
   }
 }
