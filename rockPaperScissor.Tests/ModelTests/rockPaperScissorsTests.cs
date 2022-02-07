@@ -23,5 +23,19 @@ namespace RockPaperScissor.Tests
         //Assert
         Assert.AreEqual(newGame.DecideWhoWins(user1, user2), result);
       }
+      [TestMethod]
+      public void RockPaperScissor_RockBeatsScissors()
+      {
+        //Arrange
+        string user1 = "scissors";
+        string user2 = "rock";
+
+        //Act
+        string result = "user2 wins!";
+        RockPaperScissorGame newGame = new RockPaperScissorGame();
+
+        //Assert
+        Assert.AreEqual(newGame.DecideWhoWins(user1, user2), result);
+      }
     }
 }
