@@ -97,19 +97,19 @@ namespace RockPaperScissor.Tests
         //Assert
         Assert.AreEqual(newGame.DecideWhoWins(user1, user2), result);
       }
-    //   [TestMethod]
-    //   public void RockPaperScissor_PaperBeatsRock()
-    //   {
-    //     //Arrange
-    //     string user1 = "paper";
-    //     string user2 = "rock";
+      [TestMethod]
+      public void RockPaperScissor_PaperBeatsRockUser2()
+      {
+        //Arrange
+        string user1 = "rock";
+        string user2 = "paper";
 
-    //     //Act
-    //     string result = "user1 wins!";
-    //     RockPaperScissorGame newGame = new RockPaperScissorGame();
+        //Act
+        string result = "user2 wins!";
+        RockPaperScissorGame newGame = new RockPaperScissorGame();
 
-    //     //Assert
-    //     Assert.AreEqual(newGame.DecideWhoWins(user1, user2), result);
-    //   }
+        //Assert
+        Assert.AreEqual(newGame.DecideWhoWins(user1, user2), result);
+      }
     }
 }
